@@ -1,16 +1,16 @@
 <script setup>
 import GameItem from './GameItem.vue'
-import DocumentationIcon from './icons/IconDocumentation.vue'
+import Chess from './icons/Chess.vue'
 import StreetFigther from './icons/StreetFighter.vue'
-import EcosystemIcon from './icons/IconEcosystem.vue'
-import CommunityIcon from './icons/IconCommunity.vue'
-import SupportIcon from './icons/IconSupport.vue'
+import Dota from './icons/Dota.vue'
+import Minecraft from './icons/Minecraft.vue'
+import Versus from './icons/Versus.vue'
 </script>
 
 <template>
   <GameItem>
     <template #icon>
-      <DocumentationIcon />
+      <Chess />
     </template>
     <template #heading>Documentation</template>
 
@@ -42,7 +42,7 @@ import SupportIcon from './icons/IconSupport.vue'
 
   <GameItem>
     <template #icon>
-      <EcosystemIcon />
+      <Dota />
     </template>
     <template #heading>Ecosystem</template>
 
@@ -58,7 +58,7 @@ import SupportIcon from './icons/IconSupport.vue'
 
   <GameItem>
     <template #icon>
-      <CommunityIcon />
+      <Minecraft />
     </template>
     <template #heading>Community</template>
 
@@ -73,7 +73,7 @@ import SupportIcon from './icons/IconSupport.vue'
 
   <GameItem>
     <template #icon>
-      <SupportIcon />
+      <Versus />
     </template>
     <template #heading>Support Vue</template>
 
