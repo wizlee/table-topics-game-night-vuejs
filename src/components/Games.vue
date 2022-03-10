@@ -8,11 +8,12 @@ import Versus from './icons/Versus.vue'
 </script>
 
 <template>
-  <GameItem>
+  <GameItem :imgSrc="'../assets/street-fighter.png'" :imgAltTxt="'Knight'">
     <template #icon>
       <Chess />
     </template>
-    <template #heading>Documentation</template>
+    <template #frontImg></template>
+    <template #heading>Chess Hype</template>
 
     Vue's
     <a target="_blank" href="https://vuejs.org/">official documentation</a>
@@ -23,7 +24,7 @@ import Versus from './icons/Versus.vue'
     <template #icon>
       <StreetFigther />
     </template>
-    <template #heading>Tooling</template>
+    <template #heading>Street Fighter: "Ready! Fight!" </template>
 
     This project is served and bundled with
     <a href="https://vitejs.dev/guide/features.html" target="_blank">Vite</a>. The recommended IDE
@@ -44,7 +45,7 @@ import Versus from './icons/Versus.vue'
     <template #icon>
       <Dota />
     </template>
-    <template #heading>Ecosystem</template>
+    <template #heading>DOTA: "OWNING~"</template>
 
     Get official tools and libraries for your project:
     <a target="_blank" href="https://pinia.vuejs.org/">Pinia</a>,
@@ -60,25 +61,18 @@ import Versus from './icons/Versus.vue'
     <template #icon>
       <Minecraft />
     </template>
-    <template #heading>Community</template>
+    <template #heading>Minecraft: "Never dig straight. Down. Or up." </template>
 
-    Got stuck? Ask your question on
-    <a target="_blank" href="https://chat.vuejs.org">Vue Land</a>, our official Discord server, or
-    <a target="_blank" href="https://stackoverflow.com/questions/tagged/vue.js">StackOverflow</a>.
-    You should also subscribe to
-    <a target="_blank" href="https://news.vuejs.org">our mailing list</a> and follow the official
-    <a target="_blank" href="https://twitter.com/vuejs">@vuejs</a>
-    twitter account for latest news in the Vue world.
+    "What you spend years building may be destroyed overnight. <a href="javascript:void(0);">Build anyway</a>."
+    What do you think about this minecraft quote? Inspirational, random cheesy thought, or {fill in the blank}?
   </GameItem>
 
   <GameItem>
     <template #icon>
       <Versus />
     </template>
-    <template #heading>Support Vue</template>
+    <template #heading>UNO vs Monopoly</template>
 
-    As an independent project, Vue relies on community backing for its sustainability. You can help
-    us by
-    <a target="_blank" href="https://vuejs.org/sponsor/">becoming a sponsor</a>.
+    Which one will you <a href="javascript:void(0);">choose to play</a>, if you cannot play the other one for the rest of your life?
   </GameItem>
 </template>

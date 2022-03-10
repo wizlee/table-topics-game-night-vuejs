@@ -1,13 +1,35 @@
+<script setup>
+import CardItem from './CardItem.vue'
+import { reactive, watch  } from 'vue'
+
+const props = defineProps(['imgSrc, imgAltTxt'])
+const state = reactive({imgSrc: props.imgSrc, imgAltTxt: props.imgAltTxt})
+watch(state.imgAltTxt, (newVal, _) => {
+  state.imgAltTxt = newVal
+  console.log(`state.imgAltTxt= ${state.imgAltTxt}`)
+})
+watch(state.imgSrc, (newVal, _) => {
+  state.imgSrc = newVal
+})
+</script>
+
 <template>
   <div class="item">
     <i>
       <slot name="icon"></slot>
     </i>
     <div class="details">
-      <h3>
-        <slot name="heading"></slot>
-      </h3>
-      <slot></slot>
+      <CardItem :imgSrc="imgSrc" :imgAltTxt="imgAltTxt">
+        <template #frontCardFace>
+          <slot name="frontImg"></slot>
+        </template>
+        <template #backCardFace>
+          <h3>
+          <slot name="heading"></slot>
+        </h3>
+        <slot></slot>
+        </template>
+      </CardItem>
     </div>
   </div>
 </template>
@@ -16,8 +38,6 @@
 .item {
   margin-top: 2rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
   --item-relative-ref: 100px;
 }
 
