@@ -8,7 +8,7 @@ import Versus from './icons/Versus.vue'
 </script>
 
 <template>
-  <GameItem imgsrc="/src/assets/chess.jpg" imgalttxt="Chess Banner">
+  <GameItem imgsrc="chess.jpg" imgalttxt="Chess Banner">
     <template #icon>
       <Chess />
     </template>
@@ -20,7 +20,7 @@ import Versus from './icons/Versus.vue'
     what do you think about it?
   </GameItem>
 
-  <GameItem imgsrc="/src/assets/street-fighter.png" imgalttxt="Street Fighter Banner">
+  <GameItem imgsrc="street-fighter.png" imgalttxt="Street Fighter Banner">
     <template #icon>
       <StreetFigther />
     </template>
@@ -29,7 +29,7 @@ import Versus from './icons/Versus.vue'
     Do you prefer playing video games in <a href="javascript:void(0);">console</a> or <a href="javascript:void(0);">PC</a>?
   </GameItem>
 
-  <GameItem imgsrc="/src/assets/dota.webp" imgalttxt="DOTA Banner">
+  <GameItem imgsrc="dota.webp" imgalttxt="DOTA Banner">
     <template #icon>
       <Dota />
     </template>
@@ -38,7 +38,7 @@ import Versus from './icons/Versus.vue'
     Given that your financial needs will be guaranteed, will you choose to become a <a href="javascript:void(0);">professional esports player</a> + <a href="javascript:void(0);">twitch streamer</a> for life?
   </GameItem>
 
-  <GameItem imgsrc="/src/assets/minecraft.jpg" imgalttxt="Minecraft Banner">
+  <GameItem imgsrc="minecraft.jpg" imgalttxt="Minecraft Banner">
     <template #icon>
       <Minecraft />
     </template>
@@ -48,7 +48,7 @@ import Versus from './icons/Versus.vue'
     What do you think about this minecraft quote? Inspirational, random cheesy thought, or {fill in the blank}?
   </GameItem>
 
-  <GameItem imgsrc="/src/assets/uno-vs-monopoly.png" imgalttxt="UNO VS Monopoly Banner">
+  <GameItem imgsrc="uno-vs-monopoly.png" imgalttxt="UNO VS Monopoly Banner">
     <template #icon>
       <Versus />
     </template>
