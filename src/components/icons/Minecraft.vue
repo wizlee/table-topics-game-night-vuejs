@@ -1,5 +1,5 @@
 <template>
-  <img src="src/assets/icon-src/creeper.png" alt="Versus">
+  <img src="/src/assets/icon-src/creeper.png" alt="Versus">
 </template>
 
 <style scoped>
