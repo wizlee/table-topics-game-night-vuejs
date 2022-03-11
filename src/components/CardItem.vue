@@ -1,5 +1,5 @@
 <script setup>
-const props = defineProps(['imgSrc, imgAltTxt'])
+defineProps({imgsrc : String, imgalttxt : String})
 </script>
 
 <template>
@@ -7,7 +7,7 @@ const props = defineProps(['imgSrc, imgAltTxt'])
     <div class="scene">
       <div class="card">
         <div class="card__face card__face--front">
-          <img v-if="imgAltTxt" src="{{imgSrc}}" alt="{{imgAltTxt}}" srcset="" :key="imgAltTxt">
+          <img :src="imgsrc" :alt="imgalttxt">
           <slot name="frontCardFace">
           </slot>
         </div>

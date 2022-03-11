@@ -8,56 +8,37 @@ import Versus from './icons/Versus.vue'
 </script>
 
 <template>
-  <GameItem :imgSrc="'../assets/street-fighter.png'" :imgAltTxt="'Knight'">
+  <GameItem imgsrc="src/assets/chess.jpg" imgalttxt="Chess Banner">
     <template #icon>
       <Chess />
     </template>
     <template #frontImg></template>
     <template #heading>Chess Hype</template>
 
-    Vue's
-    <a target="_blank" href="https://vuejs.org/">official documentation</a>
-    provides you with all information you need to get started.
+    What are your thoughts about Chess in general?<br />
+    If you follow or participate in the recent <a href="javascript:void(0);">chess frenzy</a>,
+    what do you think about it?
   </GameItem>
 
-  <GameItem>
+  <GameItem imgsrc="src/assets/street-fighter.png" imgalttxt="Street Fighter Banner">
     <template #icon>
       <StreetFigther />
     </template>
-    <template #heading>Street Fighter: "Ready! Fight!" </template>
+    <template #heading>Street Fighter: "Ready... Fight!" </template>
 
-    This project is served and bundled with
-    <a href="https://vitejs.dev/guide/features.html" target="_blank">Vite</a>. The recommended IDE
-    setup is <a href="https://code.visualstudio.com/" target="_blank">VSCode</a> +
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>. If you need to test
-    your components and web pages, check out
-    <a href="https://www.cypress.io/" target="_blank">Cypress</a> and
-    <a href="https://docs.cypress.io/guides/component-testing/introduction" target="_blank"
-      >Cypress Component Testing</a
-    >.
-
-    <br />
-
-    More instructions are available in <code>README.md</code>.
+    Do you prefer playing video games in <a href="javascript:void(0);">console</a> or <a href="javascript:void(0);">PC</a>?
   </GameItem>
 
-  <GameItem>
+  <GameItem imgsrc="src/assets/dota.webp" imgalttxt="DOTA Banner">
     <template #icon>
       <Dota />
     </template>
     <template #heading>DOTA: "OWNING~"</template>
 
-    Get official tools and libraries for your project:
-    <a target="_blank" href="https://pinia.vuejs.org/">Pinia</a>,
-    <a target="_blank" href="https://router.vuejs.org/">Vue Router</a>,
-    <a target="_blank" href="https://test-utils.vuejs.org/">Vue Test Utils</a>, and
-    <a target="_blank" href="https://github.com/vuejs/devtools">Vue Dev Tools</a>. If you need more
-    resources, we suggest paying
-    <a target="_blank" href="https://github.com/vuejs/awesome-vue">Awesome Vue</a>
-    a visit.
+    Given that your financial needs will be guaranteed, will you choose to become a <a href="javascript:void(0);">professional esports player</a> + <a href="javascript:void(0);">twitch streamer</a> for life?
   </GameItem>
 
-  <GameItem>
+  <GameItem imgsrc="src/assets/minecraft.jpg" imgalttxt="Minecraft Banner">
     <template #icon>
       <Minecraft />
     </template>
@@ -67,7 +48,7 @@ import Versus from './icons/Versus.vue'
     What do you think about this minecraft quote? Inspirational, random cheesy thought, or {fill in the blank}?
   </GameItem>
 
-  <GameItem>
+  <GameItem imgsrc="src/assets/uno-vs-monopoly.png" imgalttxt="UNO VS Monopoly Banner">
     <template #icon>
       <Versus />
     </template>

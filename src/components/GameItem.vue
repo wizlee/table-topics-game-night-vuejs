@@ -1,16 +1,7 @@
 <script setup>
 import CardItem from './CardItem.vue'
-import { reactive, watch  } from 'vue'
 
-const props = defineProps(['imgSrc, imgAltTxt'])
-const state = reactive({imgSrc: props.imgSrc, imgAltTxt: props.imgAltTxt})
-watch(state.imgAltTxt, (newVal, _) => {
-  state.imgAltTxt = newVal
-  console.log(`state.imgAltTxt= ${state.imgAltTxt}`)
-})
-watch(state.imgSrc, (newVal, _) => {
-  state.imgSrc = newVal
-})
+const props = defineProps({imgsrc : String, imgalttxt : String})
 </script>
 
 <template>
@@ -19,7 +10,7 @@ watch(state.imgSrc, (newVal, _) => {
       <slot name="icon"></slot>
     </i>
     <div class="details">
-      <CardItem :imgSrc="imgSrc" :imgAltTxt="imgAltTxt">
+      <CardItem :imgsrc="imgsrc" :imgalttxt="imgalttxt">
         <template #frontCardFace>
           <slot name="frontImg"></slot>
         </template>
