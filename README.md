@@ -22,6 +22,10 @@ This repo is bootscrap by using [create-vue](https://github.com/vuejs/create-vue
         - npm install -D sass
         - Use SASS in component as such `<style lang="scss"></style>`
     - Remove the reflection effect of the card in the example.
+6. Fix parent component not able to pass props to child components.
+7. Add play icon overlay on hover.
+8. Change card flipping to trigger upon hover to trigger upon click.
+    - Blur upon hover breaks the card flipping mechanism. Temporary disable it.
 
 
 ## Recommended IDE Setup
